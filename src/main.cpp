@@ -76,7 +76,7 @@ class $modify (GameManager)
 		if (p0 == IconType::Jetpack)
 			return jetpackCount;
 
-		return GameManager::countForType(p0);
+		return GameManager::get()->countForType(p0);
 	}
 
 	bool isIconUnlocked(int p0, IconType p1)
